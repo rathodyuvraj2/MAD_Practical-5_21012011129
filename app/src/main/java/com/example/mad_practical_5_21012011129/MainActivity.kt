@@ -17,10 +17,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val buttonBrowse : Button = findViewById(R.id.button_browse)
-//        val editUrl : EditText = findViewById(R.id.edittexturl)
+        val buttonBrowse : Button = findViewById(R.id.button_browse)
+        val editUrl : EditText = findViewById(R.id.edittexturl)
+        buttonBrowse.setOnClickListener { openBrowser(editUrl.text.toString()) }
 
-//        buttonBrowse.setOnClickListener { openBrowser(editUrl.text.toString()) }
+        val buttonCall : Button =findViewById(R.id.button_call)
+        val editCall : EditText = findViewById(R.id.editcall)
+        buttonCall.setOnClickListener{ openCall(editCall.text.toString())}
+
+        val buttonOpenCallLog : Button =findViewById(R.id.button_callLog)
+        buttonOpenCallLog.setOnClickListener{openCallLog()}
+
+        val buttonGallery : Button = findViewById(R.id.button_gallery)
+        buttonGallery.setOnClickListener { openGallery() }
+
+        val buttonCamera : Button =findViewById(R.id.button_camera)
+        buttonCamera.setOnClickListener { openCamera() }
+
+        val buttonAlarm : Button =findViewById(R.id.button_alarm)
+        buttonAlarm.setOnClickListener { openAlarm() }
     }
 
     fun openBrowser(url:String){
@@ -34,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openCallLog(){
-        Intent(Intent.ACTION_VIEW).setType(CallLog.Calls.CONTENT_TYPE).also { startActivity(it) }
+       Intent(Intent.ACTION_VIEW).setType(CallLog.Calls.CONTENT_TYPE).also { startActivity(it) }
 
     }
 
