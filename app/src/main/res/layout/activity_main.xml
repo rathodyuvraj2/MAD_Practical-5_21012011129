@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
         android:text="Web Url"
         app:layout_constraintBaseline_toBaselineOf="@+id/edittexturl"
         app:layout_constraintEnd_toStartOf="@+id/edittexturl"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:ems="10"
+        android:ems="8"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/button_browse"
         app:layout_constraintHorizontal_bias="0.5"
@@ -42,13 +42,13 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="wrap_content"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
         android:text="Phone No"
         app:layout_constraintBaseline_toBaselineOf="@+id/editcall"
         app:layout_constraintEnd_toStartOf="@+id/editcall"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:ems="10"
+        android:ems="8"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/button_call"
         app:layout_constraintHorizontal_bias="0.5"
@@ -67,7 +67,7 @@
         android:id="@+id/button_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone"
+        android:text="Call"
         app:layout_constraintBaseline_toBaselineOf="@+id/editcall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
