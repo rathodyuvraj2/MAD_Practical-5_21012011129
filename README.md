@@ -36,10 +36,12 @@ There are two types of Intents in Android:
 
 Implicit Intent: Using implicit Intent, components can’t be specified. An action to be performed is declared by implicit intent. Then the Android operating system will filter out components that will respond to the action. For example, opening a webpage.
 The user does not name a specific component but declares a general action to perform
+
 ex:When you tap the share button in any app you can see the Gmail, Bluetooth, and other sharing app options.
 
 Explicit Intent: Explicit Intent specifies the component. In such a case, intent provides the external class to be invoked. For example, moving from one activity to another within your app.
 The user has a clear vision and knows exactly which activity can handle the requests
+
 ex:Suppose you have two activities in your application: MainActivity and SecondActivity. You want to navigate from MainActivity to SecondActivity when a button is clicked.
 
 Types of Intent Actions:
