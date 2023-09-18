@@ -34,30 +34,35 @@ An Intent is a messaging object used to request an action from another app compo
 
 There are two types of Intents in Android:
 
-Implicit Intent: This type of Intent doesn’t specify the component. Instead, it provides information on available components provided by the system that is to be invoked2.
-Explicit Intent: This type of Intent specifies the application that will satisfy the intent, by supplying either the target app’s package name or a fully-qualified component class name
+Implicit Intent: Using implicit Intent, components can’t be specified. An action to be performed is declared by implicit intent. Then the Android operating system will filter out components that will respond to the action. For example, opening a webpage.
+The user does not name a specific component but declares a general action to perform
+ex:When you tap the share button in any app you can see the Gmail, Bluetooth, and other sharing app options.
+
+Explicit Intent: Explicit Intent specifies the component. In such a case, intent provides the external class to be invoked. For example, moving from one activity to another within your app.
+The user has a clear vision and knows exactly which activity can handle the requests
+ex:Suppose you have two activities in your application: MainActivity and SecondActivity. You want to navigate from MainActivity to SecondActivity when a button is clicked.
 
 Types of Intent Actions:
 
-View Action: Intents with the "view" action are used to display data to the user. For example, opening a web page, displaying an image, or playing a video.
-
-Edit Action: Intents with the "edit" action are used to modify existing data. For instance, opening a contact editing screen to modify contact details.
-
-Send Action: Intents with the "send" action are used to send data to a target, which could be an email, a messaging app, or another app capable of receiving the data.
-
-Dial Action: Intents with the "dial" action are used to initiate a phone call to a specified phone number.
-
-Call Action: Intents with the "call" action are used to initiate a phone call to a specified phone number, just like the "dial" action, but without user interaction.
-
-Search Action: Intents with the "search" action are used to perform a search based on the provided query.
-
-View Settings Action: Intents with the "view settings" action are used to open system settings related to a specific app or feature.
-
-Pick Action: Intents with the "pick" action are used to select and return data from a list or picker dialog.
-
-Media Actions: These include various actions related to media playback, such as play, pause, stop, and skip.
+1. Browser Intent:
+Action: Open browser for search specific things.
+2. Call Intent:
+Action: Initiate a phone call to John Smith's phone number.
+3. Call Log Intent:
+Action: Retrieve and display the user's call log entries for the specified time period (in this case, 
+today).
+4. Gallery Intent:
+Action: Retrieve and display photos from the user's photo gallery that are tagged or identified as 
+being from their vacation.
+5. Camera Intent:
+Action: Activate the device's camera and prompt the user to capture a picture of the sunset.
+6. Alarm Intent:
+Action: Schedule an alarm to trigger at 7:30 AM the next day.
 
 ![image](https://github.com/rathodyuvraj2/MAD_Practical-5_21012011129/assets/124398921/c59178e7-5d32-4a41-8c9d-8bb4ca7fa9dc)
+
+![image](https://github.com/rathodyuvraj2/MAD_Practical-5_21012011129/assets/124398921/ecf6bdbf-48d0-4880-880b-57df82d341ca)
+
 
 
 
